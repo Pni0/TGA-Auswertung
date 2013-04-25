@@ -22,4 +22,5 @@ save -ascii "Auswertung.txt" Auswertung
 csvwrite ("Auswertung.cvs", Auswertung)
 print -djpg "Auswertung.jpg";
 print -dtex "Auswertung.tex";
+print -dtikz "Auswertung-tikz.tex";
 pause();
