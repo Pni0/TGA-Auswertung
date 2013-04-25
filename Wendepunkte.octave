@@ -1,0 +1,16 @@
+x=linspace(0,4*pi,100);
+y=sin(x);
+y2stich1 = diff(diff(y));
+index1=find(diff(sign(y2stich1))~=0);
+xi=linspace(0,4*pi,100000);
+yi=interp1(x,y,xi,'spline');
+y2stich2 = diff(diff(yi));
+index2=find(diff(sign(y2stich2))~=0);
+plot(x,y);
+grid on;
+hold on;
+plot(x(index1 +1),y(index1 +1),"xk");
+plot(xi(index2 +1),yi(index2 +1),"ob");
+hold off;
+x(index1 +1),y(index1 +1),
+pause();
