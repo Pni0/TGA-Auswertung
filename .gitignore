@@ -1,4 +1,12 @@
 *.txt
 *.cvs
 *.swp
-
+*.tex
+*.jpg
+*.png
+*.eps
+*.aux
+*.log
+*.out
+*.pdf
+*.toc
